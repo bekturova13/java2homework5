@@ -23,7 +23,7 @@ public class PassengerThread extends Thread {
         try {
             semaphore.acquire();
             System.out.println( num + " bought a ticket");
-            sleep(1000);
+            sleep(2000);
             System.out.println( num +" boarded the bus");
             semaphore.release();
             countDownLatch.countDown();
